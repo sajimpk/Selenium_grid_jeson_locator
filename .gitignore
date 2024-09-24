@@ -1,0 +1,4 @@
+/target/
+allure-results/
+test-output/
+src/test/resources/selenium-server-4.24.0.jar
