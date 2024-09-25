@@ -1349,3 +1349,126 @@ Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" becau
 2024-09-24 15:30:52 [TestNG-PoolService-4] INFO  com.compass.stepdefinitions.LoginSteps - Property Category displayed
 2024-09-24 15:31:39 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles product displayed
 2024-09-24 15:31:52 [TestNG-PoolService-4] INFO  com.compass.stepdefinitions.LoginSteps - Property product displayed
+2024-09-24 17:46:45 [TestNG-PoolService-4] INFO  com.compass.stepdefinitions.LoginSteps - Property Category displayed
+2024-09-24 17:46:47 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile Category displayed
+2024-09-24 17:46:50 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles Category displayed
+2024-09-24 17:46:53 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - Company Logo displayed
+2024-09-24 17:46:59 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile product displayed
+2024-09-24 17:47:00 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - email login displayed
+2024-09-24 17:47:02 [TestNG-PoolService-4] INFO  com.compass.stepdefinitions.LoginSteps - Property product displayed
+2024-09-24 17:47:05 [TestNG-PoolService-2] INFO  com.compass.stepdefinitions.LoginSteps - Electronics Category displayed
+2024-09-24 17:47:07 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - username field displayed
+2024-09-24 17:47:18 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles product displayed
+2024-09-24 17:47:31 [TestNG-PoolService-2] INFO  com.compass.stepdefinitions.LoginSteps - Electronics product displayed
+2024-09-24 17:50:45 [TestNG-PoolService-4] INFO  com.compass.stepdefinitions.LoginSteps - Property Category displayed
+2024-09-24 17:50:49 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - Company Logo displayed
+2024-09-24 17:50:51 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles Category displayed
+2024-09-24 17:50:53 [TestNG-PoolService-2] INFO  com.compass.stepdefinitions.LoginSteps - Electronics Category displayed
+2024-09-24 17:50:53 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile Category displayed
+2024-09-24 17:50:55 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - email login displayed
+2024-09-24 17:51:01 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - username field displayed
+2024-09-24 17:51:10 [TestNG-PoolService-4] INFO  com.compass.stepdefinitions.LoginSteps - Property product displayed
+2024-09-24 17:51:19 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles product displayed
+2024-09-24 17:51:20 [TestNG-PoolService-2] INFO  com.compass.stepdefinitions.LoginSteps - Electronics product displayed
+2024-09-24 17:51:21 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile product displayed
+2024-09-24 18:42:05 [TestNG-PoolService-2] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:42:05 [TestNG-PoolService-4] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:42:05 [TestNG-PoolService-1] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:42:05 [TestNG-PoolService-0] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:42:05 [TestNG-PoolService-3] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:42:43 [TestNG-PoolService-3] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:42:43 [TestNG-PoolService-1] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:42:43 [TestNG-PoolService-0] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:42:43 [TestNG-PoolService-2] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:42:43 [TestNG-PoolService-4] ERROR com.compass.testbase.TestBase - Failed to load prop file
+2024-09-24 18:48:54 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles Category displayed
+2024-09-24 18:48:57 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile Category displayed
+2024-09-24 18:49:02 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles product displayed
+2024-09-24 18:49:05 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile product displayed
+2024-09-24 19:00:13 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles Category displayed
+2024-09-24 19:00:13 [TestNG-PoolService-4] INFO  com.compass.stepdefinitions.LoginSteps - Property Category displayed
+2024-09-24 19:00:15 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile Category displayed
+2024-09-24 19:00:16 [TestNG-PoolService-2] INFO  com.compass.stepdefinitions.LoginSteps - Electronics Category displayed
+2024-09-24 19:00:16 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - Company Logo displayed
+2024-09-24 19:00:22 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles product displayed
+2024-09-24 19:00:22 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - email login displayed
+2024-09-24 19:00:29 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - username field displayed
+2024-09-24 19:00:32 [TestNG-PoolService-2] INFO  com.compass.stepdefinitions.LoginSteps - Electronics product displayed
+2024-09-24 19:00:32 [TestNG-PoolService-4] INFO  com.compass.stepdefinitions.LoginSteps - Property product displayed
+2024-09-24 19:00:33 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile product displayed
+2024-09-24 19:02:24 [TestNG-PoolService-4] ERROR com.compass.testbase.TestBase - Failed to load prop file
+java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:708) ~[?:?]
+	at java.net.URL.<init>(URL.java:569) ~[?:?]
+	at java.net.URL.<init>(URL.java:516) ~[?:?]
+	at com.compass.testbase.TestBase.initializeDriver(TestBase.java:69) ~[classes/:?]
+	at com.compass.testbase.TestContextSetup.<init>(TestContextSetup.java:21) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678) ~[picocontainer-2.15.jar:?]
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:49) ~[cucumber-picocontainer-7.2.3.jar:7.2.3]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.2.3.jar:7.2.3]
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64) ~[cucumber-java-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:89) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132) ~[cucumber-testng-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) [cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151) [cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129) [cucumber-testng-7.2.3.jar:7.2.3]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35) [cucumber-testng-7.2.3.jar:7.2.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17) [testng-7.7.1.jar:7.7.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:614) ~[?:?]
+	... 63 more
+2024-09-24 19:02:33 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles Category displayed
+2024-09-24 19:02:34 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - Company Logo displayed
+2024-09-24 19:02:36 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile Category displayed
+2024-09-24 19:02:40 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - email login displayed
+2024-09-24 19:02:46 [TestNG-PoolService-0] INFO  com.compass.stepdefinitions.LoginSteps - username field displayed
+2024-09-24 19:02:52 [TestNG-PoolService-1] INFO  com.compass.stepdefinitions.LoginSteps - Mobile product displayed
+2024-09-24 19:02:54 [TestNG-PoolService-3] INFO  com.compass.stepdefinitions.LoginSteps - Vehicles product displayed

@@ -8,10 +8,7 @@ import org.testng.annotations.DataProvider;
     features = "src/test/resources/features", 
     glue = "com.compass.stepdefinitions",
         tags = "@Release",
-    plugin = { "pretty", "html:reports/cucumber-reports.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-            "rerun:target/failed_scenarios.txt" },
-
-
+    plugin = { "pretty", "html:reports/cucumber-reports.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
     monochrome = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
