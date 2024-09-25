@@ -15,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 /*import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;*/
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -30,7 +31,7 @@ public class TestBase {
 		try {
 			FileInputStream ip = new FileInputStream("src/main/resources/config/global.properties");
 			prop.load(ip);
-			String browserName = prop.getProperty("browser");
+//			String browserName = prop.getProperty("browser");
 
 			String[] drivers = {
 					prop.getProperty("ip1"),
@@ -44,7 +45,17 @@ public class TestBase {
 			int randomIndex = random.nextInt(drivers.length);
 
 			String selectedDriver = drivers[randomIndex];
+//////////////////////////////
+			String[] browsers = {
+					prop.getProperty("browser"),
+					prop.getProperty("browser1")
+			};
 
+			int randomBrowser = random.nextInt(browsers.length);
+
+			String browserName = browsers[randomBrowser];
+
+///////////////////////////
 			// Print the randomly selected driver
 			System.out.println("Selected Driver: " + selectedDriver);
 
@@ -52,9 +63,12 @@ public class TestBase {
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--remote-allow-origins=*");
 				driver = new RemoteWebDriver(new URL(selectedDriver),options);
-
-
 			}
+			else if (browserName.equalsIgnoreCase("firefox")) {
+				FirefoxOptions options = new FirefoxOptions();
+				driver = new RemoteWebDriver(new URL(selectedDriver), options);
+			}
+
 		} catch (IOException e) {
 			logger.error("Failed to load prop file", e);
 		}
