@@ -7,4 +7,4 @@
 mvn clean 
 Bild 
 run
-![image](https://github.com/sajimpk/DARAZ_WEB_AUTOMATION/assets/68387969/9eb139e7-b2a1-4e6e-84fe-893c5fa1af1a)
+
