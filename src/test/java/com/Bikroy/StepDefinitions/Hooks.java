@@ -6,6 +6,7 @@ import com.compass.testbase.TestContextSetup;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 public class Hooks {
     private TestContextSetup context;
@@ -15,9 +16,18 @@ public class Hooks {
     }
 
     @Before
-    public void BeforeScenario() throws IOException, InterruptedException {
-        // Initialize a new driver before each scenario
-       // testContextSetup.testBase.WebDriverManager();
+    public void BeforeScenario(Scenario scenario) throws IOException, InterruptedException {
+        if (scenario.getSourceTagNames().contains("@SAJIM")) {
+            // Run on Selenium Grid (192.168.0.11:4444)
+            context.testBase.RemoteDriver("http://localhost:4444/wd/hub");
+
+        } else if(scenario.getSourceTagNames().contains("@RAZIB")){
+            // Run on another driver (192.168.0.0.22)
+            context.testBase.RemoteDriver("http://192.168.0.109:4444/wd/hub");
+
+        }
+        System.out.println("Initializing WebDriver with IP: " + context.testBase.DIp);
+        context.initializeDriver();
     	context.testBase.navigateToUrl();
     }
     ///////////////////
