@@ -1,6 +1,8 @@
 package com.compass.stepdefinitions;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 import com.compass.testbase.TestContextSetup;
 
@@ -17,14 +19,13 @@ public class Hooks {
 
     @Before
     public void BeforeScenario(Scenario scenario) throws IOException, InterruptedException {
+        Properties properti = new Properties();
+        FileInputStream file = new FileInputStream("src/main/resources/config/global.properties");
+        properti.load(file);
         if (scenario.getSourceTagNames().contains("@SAJIM")) {
-            // Run on Selenium Grid (192.168.0.11:4444)
-            context.testBase.RemoteDriver("http://localhost:4444/wd/hub");
-
+            context.testBase.RemoteDriver(properti.getProperty("ip1"));
         } else if(scenario.getSourceTagNames().contains("@RAZIB")){
-            // Run on another driver (192.168.0.0.22)
-            context.testBase.RemoteDriver("http://192.168.0.109:4444/wd/hub");
-
+            context.testBase.RemoteDriver(properti.getProperty("ip1"));
         }
         System.out.println("Initializing WebDriver with IP: " + context.testBase.DIp);
         context.initializeDriver();

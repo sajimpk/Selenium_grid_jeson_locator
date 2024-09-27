@@ -38,6 +38,7 @@ public class TestBase {
 			prop.load(ip);
 			String browserName = prop.getProperty("browser");
 
+
 //			String[] drivers = {
 //					prop.getProperty("ip1"),
 //					prop.getProperty("ip2")
