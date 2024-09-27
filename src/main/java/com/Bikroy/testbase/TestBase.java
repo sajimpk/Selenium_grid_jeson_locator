@@ -5,12 +5,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
-import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 /*import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,55 +16,65 @@ import org.openqa.selenium.support.ui.WebDriverWait;*/
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class TestBase {
 
 	public WebDriver driver;
 	protected static final Logger logger = LogManager.getLogger(TestBase.class);
 	public static Properties prop;
+	public String DIp;
+
+
+	public void RemoteDriver (String IP) {
+		this.DIp = IP;
+		System.out.print("Its From RemoteDriver Options " + DIp + " ");
+
+	}
 
 	public WebDriver initializeDriver() throws IOException {
+
 		prop = new Properties();
 		try {
 			FileInputStream ip = new FileInputStream("src/main/resources/config/global.properties");
 			prop.load(ip);
-//			String browserName = prop.getProperty("browser");
+			String browserName = prop.getProperty("browser");
 
-			String[] drivers = {
-					prop.getProperty("ip1"),
-					prop.getProperty("ip2")
-			};
 
-//			String[] drivers = {"http://localhost:4444/wd/hub","http://172.25.1.150:4444/wd/hub","http://172.25.1.156:4444/wd/hub","http://172.25.1.89:4444/wd/hub"};
-
-			Random random = new Random();
-
-			int randomIndex = random.nextInt(drivers.length);
-
-			String selectedDriver = drivers[randomIndex];
+//			String[] drivers = {
+//					prop.getProperty("ip1"),
+//					prop.getProperty("ip2")
+//			};
+//
+////			String[] drivers = {"http://localhost:4444/wd/hub","http://172.25.1.150:4444/wd/hub","http://172.25.1.156:4444/wd/hub","http://172.25.1.89:4444/wd/hub"};
+//
+//			Random random = new Random();
+//
+//			int randomIndex = random.nextInt(drivers.length);
+//
+//			String selectedDriver = drivers[randomIndex];
 //////////////////////////////
-			String[] browsers = {
-					prop.getProperty("browser"),
-					prop.getProperty("browser1")
-			};
-
-			int randomBrowser = random.nextInt(browsers.length);
-
-			String browserName = browsers[randomBrowser];
+//			String[] browsers = {
+//					prop.getProperty("browser"),
+//					prop.getProperty("browser1")
+//			};
+//
+//			int randomBrowser = random.nextInt(browsers.length);
+//
+//			String browserName = browsers[randomBrowser];
 
 ///////////////////////////
-			// Print the randomly selected driver
-			System.out.println("Selected Driver: " + selectedDriver);
+			if (DIp == null || DIp.isEmpty()) {
+				System.out.print("Null DIP " + DIp + " ");
+			}
 
-			if (browserName.equalsIgnoreCase("chrome")) {
+			else if (browserName.equalsIgnoreCase("chrome")) {
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--remote-allow-origins=*");
-				driver = new RemoteWebDriver(new URL(selectedDriver),options);
+				System.out.print("Its From Chrome Options " + DIp + " ");
+				driver = new RemoteWebDriver(new URL(DIp),options);
 			}
 			else if (browserName.equalsIgnoreCase("firefox")) {
 				FirefoxOptions options = new FirefoxOptions();
-				driver = new RemoteWebDriver(new URL(selectedDriver), options);
+				driver = new RemoteWebDriver(new URL(DIp), options);
 			}
 
 		} catch (IOException e) {
@@ -101,4 +109,5 @@ public class TestBase {
 			driver.quit();
 		}
 	}
+
 }

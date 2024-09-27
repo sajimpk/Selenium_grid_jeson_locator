@@ -1,11 +1,14 @@
 package com.compass.stepdefinitions;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 import com.compass.testbase.TestContextSetup;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 public class Hooks {
     private TestContextSetup context;
@@ -15,9 +18,17 @@ public class Hooks {
     }
 
     @Before
-    public void BeforeScenario() throws IOException, InterruptedException {
-        // Initialize a new driver before each scenario
-       // testContextSetup.testBase.WebDriverManager();
+    public void BeforeScenario(Scenario scenario) throws IOException, InterruptedException {
+        Properties properti = new Properties();
+        FileInputStream file = new FileInputStream("src/main/resources/config/global.properties");
+        properti.load(file);
+        if (scenario.getSourceTagNames().contains("@SAJIM")) {
+            context.testBase.RemoteDriver(properti.getProperty("ip1"));
+        } else if(scenario.getSourceTagNames().contains("@RAZIB")){
+            context.testBase.RemoteDriver(properti.getProperty("ip1"));
+        }
+        System.out.println("Initializing WebDriver with IP: " + context.testBase.DIp);
+        context.initializeDriver();
     	context.testBase.navigateToUrl();
     }
     ///////////////////

@@ -18,8 +18,10 @@ public class TestContextSetup {
 
 	public TestContextSetup() throws IOException, InterruptedException {
 		testBase = new com.compass.testbase.TestBase();
-		driver = testBase.initializeDriver();
 		locatorReader = new LocatorReader("src/test/resources/locators/locators.json");
+	}
+	public void initializeDriver() throws IOException {
+		driver = testBase.initializeDriver();
 	}
 
 	public WebDriver getDriver() {
